@@ -227,9 +227,27 @@ ensure
 end
 ```
 
-
-
 ## Conditional
+```ruby
+my_number = 15
+# ternary is the same as js
+is_bigger = my_number > 1 ? true : false
+# if else block
+if my_number > 10 
+   # do something
+elsif my_number > 5
+   # do something
+else
+   # do something
+end
+# unless flip the logic, execute if the conditional is false
+x = 100
+unless x >= 2
+   puts "x is less than 2"
+ else
+   puts "x is greater than 2"
+end
+```
 
 ## Class
 ```ruby
