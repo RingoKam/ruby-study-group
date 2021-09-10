@@ -189,7 +189,37 @@ END {
 ```
 ## Loops
 ```ruby
+# our good ole while loop
+condition = true
+while condition do 
+  # set condition to false eventually
+end 
 
+# do while loop, will execute at least once
+begin 
+  # set condition to false eventually
+end while condition
+
+# we can filp above with until, which will keep looping if condition is FALSE 
+condition = false
+until condition do 
+  # set condition to true eventually
+end 
+
+# do while loop, will execute at least once
+begin 
+  # set condition to true eventually
+end until condition
+
+# equivalent way of looping
+my_array = [0,1,2,3,4,5]
+for i in my_array 
+  puts i 
+end 
+
+my_array.each do |i|
+  puts i 
+end 
 ```
 
 ## Functions 
