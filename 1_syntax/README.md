@@ -329,7 +329,12 @@ ringo.print_everything
 ```
 
 ## Symbol
-
+a unique variable
+```ruby 
+puts :tom
+puts :tom == :tom # => true
+puts :tom == :jerry # => false
+```
 
 ## Modules
 A combination of namespace and mixins
