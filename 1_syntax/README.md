@@ -224,11 +224,36 @@ end
 ## Conditional
 
 ## Class
+```ruby
+class MyClass
 
+	# class variable
+	@@myClassVariable = 0
+
+	# constructor
+	def initialize
+		
+	end 	
+
+	# class method that return string "this is method 1"
+	def method1
+		"this is method 1"
+	end
+ 
+end
+```
 ## Symbol
 
+## Modules
+A combination of namespace and mixins
+```ruby
+# declare a module
+Module 
+	def setName
+end 
+```
 
-## Practice!
+# Practice!
 Let's conert our javascript console app into a ruby console app 
 
 # Resources
