@@ -13,7 +13,7 @@ we can access command line arguments from a special array `ARGV`. If we run `rub
 
 --------
 
-## Fun facts and convention:
+## Fun facts and Convention:
 * Pascal case for classes and modules, this is actually enforce by the language `MyClass`
 * Snake case for files, variables, methods `my_variable`
 * `()` is optional for function/method 
@@ -168,6 +168,7 @@ puts pretending_to_be_there
 ```
 
 ## Blocks
+
 ```ruby
 # multi line
 do | arg |
@@ -176,9 +177,20 @@ end
 
 # single line
 { | arg | # do something }
+
+# begin statement 
+BEGIN {
+   puts ""
+}
+# end statement 
+END {
+   code
+}
 ```
 ## Loops
+```ruby
 
+```
 
 ## Functions 
 ```ruby 
@@ -271,8 +283,49 @@ class MyClass
 	def method1
 		"this is method 1"
 	end
- 
+  
+  # anything below is a private method 
+  private
+
+  def sercret_method_1
+    "this is super secret"
+  end
 end
+
+# working with properies 
+
+class MyClass
+
+    def initialize(name, age, job) 
+        @name = name
+        @age = age
+        @job = job
+    end
+
+    def print_everything() 
+        puts @name
+        puts @job
+        puts @age
+    end
+
+    attr_accessor :name # read and write 
+    attr_reader :job # read only
+    attr_writer :age # write only
+
+end 
+
+ringo = MyClass.new "ringo",  15, "jr dev"
+
+puts ringo.name
+# puts ringo.age # attempts to get throws exception on attempt to set
+puts ringo.job 
+
+ringo.name = "yuen wing"
+ringo.age = 40 
+# ringo.job = "dev" # attempt to set a read only prop will throw an exception
+
+ringo.print_everything
+
 ```
 
 ## Symbol
@@ -282,13 +335,42 @@ end
 A combination of namespace and mixins
 ```ruby
 # declare a module
-Module 
-	def setName
+module MyModule 
+    def MyModule.say_hello()
+        "Hello world"
+    end 
 end 
+
+module MyModule2
+    def MyModule2.say_hello()
+        "Hello world2"
+    end 
+end 
+
+puts MyModule.say_hello
+puts MyModule2.say_hello
+
+# using module as mixins 
+module MyMixins 
+  def say_hello
+    "Hello world my friends"
+  end 
+end
+
+class Testing
+  # now we have access to all the methods within the MyMixins module
+  include MyMixins
+
+  def say
+    say_hello
+  end 
+end 
+
 ```
 
 # Practice!
-Let's conert our javascript console app into a ruby console app 
+Let's convert our javascript console app into a ruby console app 
 
 # Resources
 https://github.com/rubocop/ruby-style-guide
+
