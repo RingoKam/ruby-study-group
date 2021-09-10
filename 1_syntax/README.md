@@ -75,7 +75,20 @@ puts @testing # 2
 - Global: globally accessible, `$`
 
 ## String
+single quote if we want to take the string as is. 
+double qoute if we want to use string intepolation. 
+```ruby
+# string intepolation
+my_name = "ringo"
+puts "#{name} world"
 
+# multi line string
+puts %{
+this is line1
+this is line2
+this is line3
+}
+```
 
 ## Array
 ```ruby
