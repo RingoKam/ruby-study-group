@@ -159,6 +159,12 @@ restaurant_menu.keys
 
 #get values
 restaurant_menu.values
+
+# We can define a default value when key is not found
+usually_brown = Hash.new("brown")
+pretending_to_be_there = usually_brown[:aaa]
+puts "Pretending to be there:"
+puts pretending_to_be_there
 ```
 
 ## Blocks
@@ -253,12 +259,12 @@ end
 ```ruby
 class MyClass
 
-	# class variable
-	@@myClassVariable = 0
+	# class variable, a global variable across class
+	@@my_class_variable = 0
 
 	# constructor
 	def initialize
-		
+		@@my_class_variable += 1
 	end 	
 
 	# class method that return string "this is method 1"
@@ -268,7 +274,9 @@ class MyClass
  
 end
 ```
+
 ## Symbol
+
 
 ## Modules
 A combination of namespace and mixins
