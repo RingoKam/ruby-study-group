@@ -41,7 +41,7 @@ result = my_string_variable.chomp!
 put result # return => "hello world"
 put my_string_variable # return => "hello world"      
 ``` 
-* Question methods are method that end with `?`. They return true and false
+* question methods are method that end with `?`. They return true and false
 
 ------
 
@@ -162,7 +162,15 @@ restaurant_menu.values
 ```
 
 ## Blocks
+```ruby
+# multi line
+do | arg |
+	# do something
+end 
 
+# single line
+{ | arg | # do something }
+```
 ## Loops
 
 
@@ -219,31 +227,9 @@ ensure
 end
 ```
 
+
+
 ## Conditional
-```ruby
-my_number = 15
-
-# ternary is the same as js
-is_bigger = my_number > 1 ? true : false
-
-# if else block
-if my_number > 10 
-   # do something
-elsif my_number > 5
-   # do something
-else
-   # do something
-end
-
-# unless flip the logic, execute if the conditional is false
-x = 100
-
-unless x >= 2
-   puts "x is less than 2"
- else
-   puts "x is greater than 2"
-end
-```
 
 ## Class
 ```ruby
