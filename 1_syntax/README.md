@@ -262,10 +262,18 @@ END {
 }
 ```
 
-and use a block as an argument
-
+and use a block as an argument! 
+- A method can only take in 1 block as an argument. 
+- The block paramemter needs to the last argument.
+- Its a convention to change add `&` before the block parameter variable name (optional)
 ```ruby
+def nem(msg, &block) do
+    block.call(msg)
+    block2.call(msg)
+end
 
+nem("test") { |msg| puts msg } # => print out test
+nem("hello world") { |msg| puts msg } # => print out hello world
 ```
 
 ## Loops
