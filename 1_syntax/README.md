@@ -262,10 +262,12 @@ END {
 }
 ```
 
-and use a block as an argument! 
-- A method can only take in 1 block as an argument. 
+and use a block as an argument!
+
+- A method can only take in 1 block as an argument.
 - The block paramemter needs to the last argument.
 - Its a convention to change add `&` before the block parameter variable name (optional)
+
 ```ruby
 def nem(msg, &block) do
     block.call(msg)
@@ -329,6 +331,49 @@ end
 def my_function(arg1, arg2, arg3 = "nothing to see here, just a default argument")
     "this is a fantastic function with #{arg1} #{arg2} #{arg3}"
 end
+```
+
+## Proc and Lambda
+
+Proc is a block of code that can be store in a variable and pass into a method or another proc.
+We can create proc in 2 favors: `proc` vs `lamdbda`
+
+```ruby
+# we can declare a lambda
+my_lambda_func = -> { puts "say something" }
+# or
+my_lambda_func = lambda { puts "say something" }
+
+# we can exec lambda with `call`
+my_lambda_func.call # => prints "say something"
+```
+
+In fact, lambda is a kind of proc in ruby. The main distinction:
+
+1. proc doesn't care if we pass in the specified argument.
+2. when a proc return, it returns immediately!
+
+```ruby
+def who_are_you(my_proc)
+    puts "who are you?"
+    puts my_proc.call
+    "no you are an imposter 🔪🔪🔪💀"
+end
+
+msg = "i am human 👮‍♀️"
+
+# lambda will execute every statement in the method
+my_lambda = lambda { puts msg; return }
+puts who_are_you(my_lambda)
+# => who are you?
+# => i am human 👮‍♀️
+# => no you are an imposter 🔪🔪🔪💀
+
+# As soon as proc is called, the who_are_you function finish its execution
+my_proc = Proc.new { puts msg; return }
+puts who_are_you(my_proc)
+# => who are you?
+# => i am human 👮‍♀️
 ```
 
 ## Error Handling
