@@ -434,6 +434,16 @@ unless x >= 2
 end
 ```
 
+## Symbol
+
+a unique variable
+
+```ruby
+puts :tom
+puts :tom == :tom # => true
+puts :tom == :jerry # => false
+```
+
 ## Class
 
 ```ruby
@@ -462,7 +472,7 @@ end
 
 # working with properies
 
-class MyClass
+class Human
 
     def initialize(name, age, job)
         @name = name
@@ -482,7 +492,7 @@ class MyClass
 
 end
 
-ringo = MyClass.new "ringo",  15, "jr dev"
+ringo = Human.new "ringo",  15, "jr dev"
 
 puts ringo.name
 # puts ringo.age # attempts to get throws exception on attempt to set
@@ -494,17 +504,29 @@ ringo.age = 40
 
 ringo.print_everything
 
+# class inheritance with <
+class Wizard < Human
+
+    def initialize(name, age)
+        super(name, age, "wizard")
+        puts "AND a WIZARD TOO!"
+    end
+
+    def curse()
+        puts "🧙‍♂️#{name}: Avada Kedavra!!!"
+    end
+end
+
+ringo = Wizard.new "Ringo", "16"
+
+# can still call parent method
+ringo.print_everything
+
+# inherited class have access to parent properties/instance variable
+ringo.curse
 ```
 
-## Symbol
-
-a unique variable
-
-```ruby
-puts :tom
-puts :tom == :tom # => true
-puts :tom == :jerry # => false
-```
+> ruby doesn't support multiple inheritance
 
 ## Modules
 
@@ -544,6 +566,30 @@ class Testing
 end
 
 ```
+
+# importing ruby files
+
+keyword `require` allow you to run file
+
+```ruby
+# hello_world.rb
+puts "welcome to hello world"
+
+def say_hello()
+  puts "Hello world"
+end
+
+# index.rb
+# this will execute code in hello_world
+require './hello_world.rb'
+# => welcome to hello world
+
+# and now we will have access to function defined in hello_world
+say_hello()
+# => Hello world
+```
+
+Keep in mind the path in require depends on where your CWD. To reference ruby file with relative path, use `require_relative`
 
 # Practice!
 
