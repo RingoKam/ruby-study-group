@@ -512,10 +512,19 @@ class Wizard < Human
         puts "AND a WIZARD TOO!"
     end
 
+    # we can declare static method by adding self before the method
+    def self.job_desc()
+        puts "Wizards are humans with spell PEW PEW PEW"
+    end
+
     def curse()
         puts "🧙‍♂️#{name}: Avada Kedavra!!!"
     end
 end
+
+# we can invoke static method without instantiating the class
+Wizard.job_desc
+# => "Wizards are humans with spell PEW PEW PEW"
 
 ringo = Wizard.new "Ringo", "16"
 
