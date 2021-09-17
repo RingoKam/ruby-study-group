@@ -322,6 +322,11 @@ def my_function()
     "this is a fantastic function"
 end
 
+# define a function without ()
+def my_function arg1, arg2
+  "#{arg1} #{arg2}"
+end
+
 # function with arguments
 def my_function(arg1, arg2)
     "this is a fantastic function with #{arg1} #{arg2}"
@@ -330,6 +335,11 @@ end
 # function with optional arguments
 def my_function(arg1, arg2, arg3 = "nothing to see here, just a default argument")
     "this is a fantastic function with #{arg1} #{arg2} #{arg3}"
+end
+
+#keyword argument
+def my_function(arg, name: "asdsada")
+
 end
 ```
 
@@ -432,6 +442,15 @@ unless x >= 2
  else
    puts "x is greater than 2"
 end
+
+case a_variable
+when "Danillo"
+  something
+when "Nem"
+  somethingelse
+else
+  blah
+end
 ```
 
 ## Symbol
@@ -451,6 +470,7 @@ class MyClass
 
 	# class variable, a global variable across class
 	@@my_class_variable = 0
+  @my_instance_variable
 
 	# constructor
 	def initialize
@@ -560,8 +580,11 @@ puts MyModule2.say_hello
 
 # using module as mixins
 module MyMixins
+
+  @name = "ringo"
+
   def say_hello
-    "Hello world my friends"
+    "Hello world my friends" + @name
   end
 end
 
@@ -570,9 +593,25 @@ class Testing
   include MyMixins
 
   def say
+    @name = "nem"
     say_hello
   end
 end
+
+t1 = Testing.new.say
+t2 = Testing.new.say
+
+class Testing
+  extend MyMixins
+
+  def say
+    @name = "nem"
+    Testing.say_hello
+  end
+end
+
+t1 = Testing.say
+t2 = Testing.say
 
 ```
 
