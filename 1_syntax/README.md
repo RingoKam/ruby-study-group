@@ -28,7 +28,7 @@ puts 'this is sparta!!!'
 puts('this is sparta!!!')
 
 # to not invoke the method, but store it in a variable
-var my_puts = method(:puts)
+my_puts = method(:puts)
 my_puts.call 'this is sparta!!!'
 ```
 
@@ -138,6 +138,8 @@ my_array.unshift(-1) [0, 1, 2, 3, 4, 5, 6]
 # remove from an array
 my_array.delete_at 5 # delete index 5, returns the item deleted
 my_array.delete "2" # delete value that match up to 2
+
+my_array.pop # remove from last
 ```
 
 ## Hash
@@ -638,6 +640,13 @@ say_hello()
 ```
 
 Keep in mind the path in require depends on where your CWD. To reference ruby file with relative path, use `require_relative`
+
+# Meta programming
+
+Object.const_get
+safe_constantize
+
+# Ruby Packages
 
 # Practice!
 
