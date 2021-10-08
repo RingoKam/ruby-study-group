@@ -1,5 +1,10 @@
 # ruby-study-group
 
+## Prereq
+1. Install Ruby 
+2. Install VSCode 
+3. Install VSCode live share extension
+
 ## Index
 1. [Syntax](./1_syntax/README.md) 
 2. Rails

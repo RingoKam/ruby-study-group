@@ -701,5 +701,8 @@ ruby packages are called gems. We can find the package/gem for a ruby applicatio
 # Practice!
 Let's convert our javascript console app into a ruby console app
 
+or 
+
+`paper rock scissors` console app?
 # Resources
 https://github.com/rubocop/ruby-style-guide
