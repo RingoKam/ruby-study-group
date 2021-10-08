@@ -618,7 +618,9 @@ t2 = Testing.say
 ```
 
 # Meta programming
+
 Get information about our program on run time.
+
 ```ruby
 class Hello
     def say
@@ -626,7 +628,7 @@ class Hello
     end
 end
 
-module MyModule 
+module MyModule
   class MyClass
     def my_method
       puts "say hello to my little method"
@@ -639,29 +641,28 @@ puts Hello.methods # => print out a list of methods [say, ...]
 
 # Object.respond_to? method name will return true if method exist
 Hello.new.respond_to? :say # => true
-Hello.new.respond_to? :my_method # => false 
+Hello.new.respond_to? :my_method # => false
 
 # Object.class tell us the of object
-puts "i am a string".class # => string 
-puts Hello.class # => Class 
+puts "i am a string".class # => string
+puts Hello.class # => Class
 puts MyModule.class # => Module
 
 # Look for constant name withn our ruby Object w/ `Object.const_get`
 klass =  Object.const_get "Hello"
 puts klass.class # => Class
-hello = klass.new 
+hello = klass.new
 hello.say # => Hello World
 
 # works with class in a module as well
 klass_in_module =  Object.const_get "::MyModule::Hello"
 puts klass_in_module.class # => Class
-my_class = klass_in_module.new 
+my_class = klass_in_module.new
 my_class.my_method # => say hello to my little method
 
 # Ruby on Rail also has something similar on string. Take string and turn it into String.safe_constantize
-my_class = "Hello".safe_constantize 
+my_class = "Hello".safe_constantize
 ```
-
 
 # importing ruby files
 
@@ -688,21 +689,26 @@ say_hello()
 Keep in mind the path in require depends on where your CWD. To reference ruby file with relative path, use `require_relative`
 
 # Ruby Packages
-ruby packages are called gems. We can find the package/gem for a ruby application via gemfile. 
+
+ruby packages are called gems. We can find the package/gem for a ruby application via gemfile.
 
 `bundler` is our package manager, it is in charge of taking our gem file and find the versions of the gems that work with each other. Once the version of the gem is found, it gets added to the gemlock file.
 
-## common command 
-`bundle install` install all the gems specified in the gemfile
-`bundle exec` run the ruby program with all the gem packages avaiable to be "require"
-`bundle add "gem name"` add gem to gem file and install it. 
-`bundle remove "gem name"` remove gem and make sure gemfile is still valid after removal (if not, a warning is raised!)
+## common command
+
+- `bundle install` install all the gems specified in the gemfile
+- `bundle exec` run the ruby program with all the gem packages avaiable to be "require"
+- `bundle add "gem name"` add gem to gem file and install it.
+- `bundle remove "gem name"` remove gem and make sure gemfile is still valid after removal (if not, a warning is raised!)
 
 # Practice!
+
 Let's convert our javascript console app into a ruby console app
 
-or 
+or
 
 `paper rock scissors` console app?
+
 # Resources
+
 https://github.com/rubocop/ruby-style-guide
