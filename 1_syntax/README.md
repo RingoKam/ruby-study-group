@@ -694,7 +694,7 @@ ruby packages are called gems. We can find the package/gem for a ruby applicatio
 
 `bundler` is our package manager, it is in charge of taking our gem file and find the versions of the gems that work with each other. Once the version of the gem is found, it gets added to the gemlock file.
 
-## common command
+## Common command
 
 - `bundle install` install all the gems specified in the gemfile
 - `bundle exec` run the ruby program with all the gem packages avaiable to be "require"
