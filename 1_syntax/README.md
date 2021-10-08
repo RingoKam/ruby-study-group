@@ -617,6 +617,52 @@ t2 = Testing.say
 
 ```
 
+# Meta programming
+Get information about our program on run time.
+```ruby
+class Hello
+    def say
+        puts "Hello World"
+    end
+end
+
+module MyModule 
+  class MyClass
+    def my_method
+      puts "say hello to my little method"
+    end
+  end
+end
+
+# Object.methods will give us a list of methods available in an object
+puts Hello.methods # => print out a list of methods [say, ...]
+
+# Object.respond_to? method name will return true if method exist
+Hello.new.respond_to? :say # => true
+Hello.new.respond_to? :my_method # => false 
+
+# Object.class tell us the of object
+puts "i am a string".class # => string 
+puts Hello.class # => Class 
+puts MyModule.class # => Module
+
+# Look for constant name withn our ruby Object w/ `Object.const_get`
+klass =  Object.const_get "Hello"
+puts klass.class # => Class
+hello = klass.new 
+hello.say # => Hello World
+
+# works with class in a module as well
+klass_in_module =  Object.const_get "::MyModule::Hello"
+puts klass_in_module.class # => Class
+my_class = klass_in_module.new 
+my_class.my_method # => say hello to my little method
+
+# Ruby on Rail also has something similar on string. Take string and turn it into String.safe_constantize
+my_class = "Hello".safe_constantize 
+```
+
+
 # importing ruby files
 
 keyword `require` allow you to run file
@@ -640,11 +686,6 @@ say_hello()
 ```
 
 Keep in mind the path in require depends on where your CWD. To reference ruby file with relative path, use `require_relative`
-
-# Meta programming
-
-Object.const_get
-safe_constantize
 
 # Ruby Packages
 
