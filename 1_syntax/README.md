@@ -700,6 +700,7 @@ ruby packages are called gems. We can find the package/gem for a ruby applicatio
 - `bundle exec` run the ruby program with all the gem packages avaiable to be "require"
 - `bundle add "gem name"` add gem to gem file and install it.
 - `bundle remove "gem name"` remove gem and make sure gemfile is still valid after removal (if not, a warning is raised!)
+- `gem open 'gem name'` open gem data source
 
 # Practice!
 
