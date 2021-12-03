@@ -16,7 +16,7 @@ Ruby on rails is a server side web framework. It follows the MVC patterns and pr
 - `bin/rails db:migration` run migration
 - `bin/rails db:rollback` rollback last migration
 - `bin/rails db:seed` run seed code in db/seeds
-- `bin/rails db:reset` delete db and recreate it and run all the migrations
+- `bin/rails db:reset` delete db and recreate it and run all the migrations (run seed as well)
 
 ## Rake
 
@@ -46,16 +46,24 @@ We can create our own rake task by adding a file with .rake extension in `/lib/t
 
 ## Routing
 
+How does rails handle routing?
+Driven by the configs in `configs/routes.rb`. Keep in mind the order matters!
+d
+
 ## Rack
+
+Middleware
 
 ## Spring Preloader
 
-## sprockets
-
 ## Puma
+
+## Pundit
+
+| Authorization
+
+## sprockets
 
 ## Action Cable
 
 ## Action Mailers
-
-## Pundit
