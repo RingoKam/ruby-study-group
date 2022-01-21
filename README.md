@@ -14,3 +14,6 @@
 6. Sidekiq
 7. Testing 
 8. Case Study 
+
+## Practical Object oriented design
+Chapter 1 https://docs.google.com/presentation/d/1AiAClhVJiE3bkjDxGESRTAwpDwPbSJP7X25cv4OHMQY/edit?usp=sharing
