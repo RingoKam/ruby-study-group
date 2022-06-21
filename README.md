@@ -17,3 +17,11 @@
 
 ## Practical Object oriented design
 Chapter 1 https://docs.google.com/presentation/d/1AiAClhVJiE3bkjDxGESRTAwpDwPbSJP7X25cv4OHMQY/edit?usp=sharing
+Chapter 2 https://docs.google.com/presentation/d/17casSk4Q5oZVPZXyCDs3momV4TvySE2KXUG4qzVuhDI/edit#slide=id.p
+Chatper 3 https://docs.google.com/presentation/d/1XHXrrYEEcQnzghPGF5VdOyeJSLvZyJWEYrZoYXfe908/edit#slide=id.p
+Chapter 4 https://docs.google.com/presentation/d/18mjosYWpOvqB1eerzjVCaTJl4V3l7cJBw7CG6w3w-7A/edit#slide=id.p
+Chapter 5 https://docs.google.com/presentation/d/16nHsJ3ofDIb1V564PSkQr1xzF0uNOfgaJbK_C3w7azo/edit#slide=id.p
+Chapter 6 https://docs.google.com/presentation/d/1YxY9hbtcOB6ugolCRyJo_rJoG1FC4eQgHYWMZCSOjBQ/edit#slide=id.p
+Chapter 7 https://docs.google.com/presentation/d/1S_zwq1Q9AUJ_3ngQiGBktOdv7e9ApkLP77TCmkgEqYk/edit#slide=id.p
+Chapter 8 TBD
+Chapter 9 TBD
