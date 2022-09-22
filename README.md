@@ -27,4 +27,4 @@
 * Chapter 9 TBD
 
 ## Polish Ruby Programming
-* [Chapter 1] https://docs.google.com/presentation/d/13N_bm594oxRmgQmqelQVkIkB6wk3tzawJvuQGGfcUdQ/edit?usp=sharing
+* [Chapter 1](https://docs.google.com/presentation/d/13N_bm594oxRmgQmqelQVkIkB6wk3tzawJvuQGGfcUdQ/edit?usp=sharing)
