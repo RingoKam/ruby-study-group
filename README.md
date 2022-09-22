@@ -23,8 +23,8 @@
 * [Chapter 5](https://docs.google.com/presentation/d/16nHsJ3ofDIb1V564PSkQr1xzF0uNOfgaJbK_C3w7azo/edit#slide=id.p)
 * [Chapter 6](https://docs.google.com/presentation/d/1YxY9hbtcOB6ugolCRyJo_rJoG1FC4eQgHYWMZCSOjBQ/edit#slide=id.p)
 * [Chapter 7](https://docs.google.com/presentation/d/1S_zwq1Q9AUJ_3ngQiGBktOdv7e9ApkLP77TCmkgEqYk/edit#slide=id.p)
-* Chapter 8 TBD
-* Chapter 9 TBD
+* [Chapter 8](https://docs.google.com/presentation/d/1u49iYuZyFSGNuMPlWDQjJgBmsZivZOv8hXDfwBKIUlk/edit?usp=sharing)
+* [Chapter 9](https://docs.google.com/presentation/d/1vUZ_w7kfcfmxKFXLxbLPOiE5SR39sFqz9BZB4KOEfLo/edit?usp=sharing)
 
 ## Polish Ruby Programming
 * [Chapter 1](https://docs.google.com/presentation/d/13N_bm594oxRmgQmqelQVkIkB6wk3tzawJvuQGGfcUdQ/edit?usp=sharing)
