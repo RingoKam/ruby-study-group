@@ -1,4 +1,4 @@
-# ruby-study-group
+# ♦️ Ruby study group ♦️
 
 ## Prereq
 1. Install Ruby 
