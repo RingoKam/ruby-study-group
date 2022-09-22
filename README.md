@@ -25,3 +25,6 @@
 * [Chapter 7](https://docs.google.com/presentation/d/1S_zwq1Q9AUJ_3ngQiGBktOdv7e9ApkLP77TCmkgEqYk/edit#slide=id.p)
 * Chapter 8 TBD
 * Chapter 9 TBD
+
+## Polish Ruby Programming
+* [Chapter 1] https://docs.google.com/presentation/d/13N_bm594oxRmgQmqelQVkIkB6wk3tzawJvuQGGfcUdQ/edit?usp=sharing
