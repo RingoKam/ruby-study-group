@@ -13,7 +13,7 @@ Ruby on rails is a server side web framework. It follows the MVC patterns and pr
   base on the above example: `bin/rails destroy migration activity` and `bin/rails destroy model Activity` will clean up the files generated
 - `bin/rails console` let us interact with ruby on rails in the command line
 - `bin/rails runner file.rb` run selected file or script in rails
-- `bin/rails db:migration` run migration
+- `bin/rails db:migrate` run migration
 - `bin/rails db:rollback` rollback last migration
 - `bin/rails db:seed` run seed code in db/seeds
 - `bin/rails db:reset` delete db and recreate it and run all the migrations (run seed as well)
